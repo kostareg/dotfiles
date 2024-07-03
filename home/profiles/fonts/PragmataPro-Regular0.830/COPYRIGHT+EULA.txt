@@ -1,0 +1,81 @@
+Font Designer and Hinting: Fabrizio Schiavi
+http://www.fsd.it/
+
+
+Copyright Property of Fabrizio Schiavi:
+http://www.fsd.it/
+
+
+Keep in touch
+Fabrizio
+
+
+
+
+
+__________________________________
+
+FSD License agreement:
+version 3.2 (2022-07-27)
+
+
+1— By purchasing a font you agree to the terms and conditions set herein.
+2— Usage of this Software is limited to the NUMBER OF USERS that you have stated during the purchase.
+    Service bureau output does not count towards the amount of computers as long as the font being output is completely removed from the service bureau system after your job has been output.
+3— The licenses for ONE user is PERSONAL USE ONLY, COMMERCIAL USE IS NOT PERMITTED!
+    Commercial use permission starts from the 2-50 employees license.
+    Only you can use the font files on your computer and printer.
+4— If the company you working for as supplier has more than 2 employees 
+    you MUST order the appropriated license from http://www.fsd.it/ site.
+5— If the company you working for as on in-house has more than 2 employees 
+    you MUST order the appropriated license from http://www.fsd.it/ site.
+6— If you bought a desktop license you CAN’T use them in apps and web sites.
+    If you bought a web site license you CAN’T use them in apps and as desktop font.
+    If you bought a license for app you CAN’T use them in web sites and as desktop font.
+    You MUST to order the appropriated license from http://www.fsd.it/ site.
+7— You may copy the Software, but only for backup purposes.
+8— You must not rent, lease, loan, resell for profit, distribute, or network the Software.
+9— Fonts may be embedded in static PDFs, provided they are subset.
+10— Desktop license covers every kind of use except web sites and apps. 
+    Examples: broadcasting (YouTube, Vimeo…), ePubs (eBooks, eMagazines, eNewspaper, or interactive PDF)
+11— PAY ONCE. This license does not need to be renewed.
+12— If the font will be used for a project that reaches more than one (1) million viewers 
+     you must notify Fabrizio Schiavi using contact page http://www.fsd.it/contact-me/
+     to make a custom license agreement.
+13— If the company has more than five hundred thousand (500 000) of employees 
+     you must notify Fabrizio Schiavi using contact page http://www.fsd.it/contact-me/ 
+     to make a custom license agreement.
+14— In no event will Fabrizio Schiavi be liable for any damages, including loss of data, or other incidental or consequential damages arising out of the use or inability to use the data supplied.
+15— The Software and the accompanying articles are protected by Copyright Law and international treaty. Unauthorized reproduction or distribution is subject to civil and criminal penalties.
+
+
+For Web font licensors:
+a— You CAN’T convert desktop fonts into web fonts, you must order the corresponding web font version directly by http://www.fsd.it/ site.
+b— You may use it as a font embedding for web pages (@ font-face) provided it is converted in a way that makes it impossible to recover the original font.
+c— You must follow the procedure described at http://www.fsd.it/how-to-protecting-the-webfont-files/ to avoid linking.
+d— You can install the web font at one (1) site. If you need to install at two (2) sites you must buy another license.
+e— The limitation of page views per month is of ten thousand (10,000) if you exceed this you must notify Fabrizio Schiavi using contact page http://www.fsd.it/contact-me/
+f— You CAN’T convert web fonts into desktop fonts
+
+
+For App licensors:
+g— You must embed the font files in your mobile application—s code in a way that makes it impossible to recover the original font.
+h— You can install the app font in one (1) app. If you need to install it in two (2) apps you must buy another license.
+
+
+
+Refund policy:
+We issue refunds for digital products within 14 days of the original purchase of the product.
+There are some items, however, that are ineligible for return, including:
+- Electronic Fonts and Icons Downloads
+- Gift Cards
+
+
+
+
+
+
+__________________________________
+UPDATED END USER LICENSE AGREEMENT
+http://www.fsd.it/shop/terms/
+__________________________________
