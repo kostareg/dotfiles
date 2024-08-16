@@ -30,6 +30,8 @@
   virtualisation.docker.rootless.enable = true;
   virtualisation.docker.rootless.setSocketVariable = true;
 
+  nix.trustedUsers = [ "root" "@wheel" ];
+
   programs.bash = {
     # Enable starship
     promptInit = ''
@@ -38,6 +40,8 @@
     # Enable direnv, a tool for managing shell environments
     interactiveShellInit = ''
       eval "$(${pkgs.direnv}/bin/direnv hook bash)"
+      export DIRENV_LOG_FORMAT=
+      export DIRENV_WARN_TIMEOUT=1m
     '';
     # Export docker host link.
     shellInit = ''
@@ -52,10 +56,6 @@
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.allowUnsupportedSystem = true;
-
-  boot.extraModprobeConfig = ''
-    options snd-intel-dspcfg dsp_driver=1
-  '';
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -135,15 +135,20 @@
   # services.printing.enable = true;
 
   # Enable sound.
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    jack.enable = true;
-  };
+  sound.enable = true;
+  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.package = pkgs.pulseaudioFull;
+
+  #boot.extraModprobeConfig = ''
+  #  options snd slots=snd-hda-intel
+  #  options snd-intel-dspcfg dsp_driver=1
+  #'';
+
+  boot.extraModprobeConfig = ''
+    options snd_sof_pci sof_debug=1
+    options snd_sof_intel_hda_common hda_model=sof-hda-dsp
+    options snd_hda_intel model=generic
+  '';
 
   environment.etc = {
     "wireplumber/bluetooth.lua.d/51-bluez-config.lua".text = ''
@@ -162,6 +167,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    alsa-utils
     binutils
     coreutils
     curl
@@ -239,6 +245,13 @@
   security.sudo.extraConfig = ''
     Defaults lecture = never
   '';
+
+  boot.kernelPatches = [
+    {
+        name = "audio";
+        patch = ./audio.patch;
+    }
+  ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
